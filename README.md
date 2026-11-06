@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# SideQuest
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SideQuest is a hyper-local web app designed for apartment complexes and small neighborhood blocks. Instead of using money for tiny favors, neighbors post 5-minute tasks, earn Civic Credits (CC), and redeem those credits at local partner shops.
 
-## Available Scripts
+Built for **MLH Global Hack Week: Builders Week**.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## The Idea
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Most neighborhood apps fail because asking a stranger for a small favor feels awkward, and paying $2 for a 5-minute task makes things weirder.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+SideQuest fixes this by:
 
-### `npm test`
+- Keeping tasks super short (under 10 minutes).
+- Using a time-banking credit system instead of cash.
+- Restricting task feeds to verified building/block rings so you're only interacting with actual neighbors.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## What's Built (MVP Features)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Micro-Task Feed (`Feed.jsx`):** Post quick requests (e.g., holding a delivery box, borrowing a step ladder, resetting a circuit breaker) and set a CC reward. Nearby neighbors can accept requests in one click.
+- **Civic Wallet (`Wallet.jsx`):** Track your earned CC balance, total time contributed to your neighborhood, daily activity streaks, and hero levels.
+- **Local Shop Redemption:** View partner perks (like free coffee at a neighborhood bakery or discounts at the corner store) that can be unlocked using earned credits.
+- **Bottom Tab Navigation (`App.js`):** Responsive mobile-first view to switch between the task feed and your personal wallet.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech Stack
 
-### `npm run eject`
+- **Frontend:** React.js, JavaScript (ES6+), CSS3
+- **UI & Icons:** Lucide Icons (`lucide-react`)
+- **Backend:** Firebase Firestore (for credit ledger transactions)
+- **Hosting & Version Control:** Git, GitHub, Vercel
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How to Run It Locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repo:**
+   ```bash
+   git clone [https://github.com/Nabihabintyk/sidequest.git](https://github.com/Nabihabintyk/sidequest.git)
+   cd sidequest
+   ```
